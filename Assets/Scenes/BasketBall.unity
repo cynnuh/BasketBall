@@ -673,7 +673,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -706,6 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b54589bd03bd943bc64819d340c133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreGateTrigger
+  isTopTrigger: 1
 --- !u!1001 &813454287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -979,7 +980,7 @@ MonoBehaviour:
   hoopRingTarget: {fileID: 1441928056}
   line: {fileID: 813454295}
   holdLocalOffset: {x: 0, y: 0, z: 0}
-  minPower: 10
+  minPower: 7
   maxPower: 18
   upwardBoost: 0.45
   arcFromSwipe: 0.35
@@ -1658,7 +1659,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1691,6 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b54589bd03bd943bc64819d340c133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreGateTrigger
+  isTopTrigger: 0
 --- !u!1001 &1717725143
 PrefabInstance:
   m_ObjectHideFlags: 0

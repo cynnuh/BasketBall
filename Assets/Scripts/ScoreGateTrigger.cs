@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class ScoreGateTrigger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public bool isTopTrigger = true;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (!other.CompareTag("Ball")) return;
+
+        BallThrower ball = other.GetComponent<BallThrower>();
+        if (ball == null) return;
+
+        if (isTopTrigger) ball.MarkPassedTop();
+        else ball.TryScoreFromBottom();
     }
 }
